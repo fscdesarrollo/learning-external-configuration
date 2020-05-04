@@ -3,6 +3,7 @@ version: '3.4'
 services:
   learning.externalconfiguration.api:
     environment:
+      - ASPNETCORE_ENVIRONMENT=ExternalConfig
       - ASPNETCORE_URLS=https://+:443;http://+:80
     ports:
       - "80"

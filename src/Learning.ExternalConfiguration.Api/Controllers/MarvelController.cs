@@ -82,9 +82,9 @@ namespace Learning.ExternalConfiguration.Api.Controllers
                 var publicKey = _configuration["API_MARVEL_PUBLIC_KEY"];//Get Key from Azure App Configuration
                 var hash = _configuration.GetSection("MarvelApiConfig:Hash").Value;
                 var marvelAuthenticationQueryParams = new MarvelApiAuthenticationQueryParams(_marvelConfig.Timestamp, publicKey, hash);
-                
+
                 var character = await _marvelAPI.GetCharacterById(characterId, marvelAuthenticationQueryParams);
-                
+
                 return new OkObjectResult(character);
             }
             catch (ApiException ex)

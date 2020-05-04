@@ -1,6 +1,6 @@
 using System;
 
-namespace Learning.ExternalConfiguration.Api
+namespace Learning.ExternalConfiguration.Api.Models
 {
     public class WeatherForecast
     {

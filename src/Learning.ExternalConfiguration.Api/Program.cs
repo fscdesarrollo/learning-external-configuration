@@ -22,7 +22,7 @@ namespace Learning.ExternalConfiguration.Api
                         var hostingEnviroment = hostingContext.HostingEnvironment;
                         var azureConnectionString = Environment.GetEnvironmentVariable("AZURE_CONNECTION_STRING");
                         config.AddAzureAppConfiguration(azureConnectionString); //Get connection strin to connect Azure App Configuration
-                        
+
                         if (hostingEnviroment.EnvironmentName.Equals("ExternalConfig"))
                         {
                             config.AddConfigServer(hostingEnviroment.EnvironmentName);

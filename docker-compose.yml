@@ -8,15 +8,14 @@ services:
       dockerfile: src/Learning.ExternalConfiguration.Api/Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=ExternalConfig
-      - ASPNETCORE_URLS=https://+:443;http://+:80
       - AZURE_CONNECTION_STRING=Endpoint=https://learningconfiguration.azconfig.io;Id=+qGv-le-s0:HpBWRbYsPjfY16p1OBaL;Secret=Cfo6lEr4lWJETwxvOLrVpBi8HPmOlazBFulK7Pceu7c=
     depends_on:
       - spring-cloud-config-server
 
   spring-cloud-config-server:
+    image: hyness/spring-cloud-config-server
     container_name: spring-cloud-config-server
     ports:
-        - '8888:8888'
+      - '8888:8888'
     environment:
-        - 'SPRING_CLOUD_CONFIG_SERVER_GIT_URI=https://github.com/fscdesarrollo/learning-config-server'
-    image: hyness/spring-cloud-config-server
+      - 'SPRING_CLOUD_CONFIG_SERVER_GIT_URI=https://github.com/fscdesarrollo/learning-config-server'
