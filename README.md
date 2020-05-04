@@ -1,14 +1,21 @@
-# learning-external-configuration
-Implementacion de proveedores de configuracion externas:
- - Spring Cloud Config: https://cloud.spring.io/spring-cloud-config/reference/html/
- - Azure App Configuration: https://github.com/Azure/AppConfiguration
 
-## Frameworks/Tecnologias
- - .Net Core 3.1: https://docs.microsoft.com/es-es/dotnet/core/
- - Refit: https://github.com/reactiveui/refit
- - Polly: https://github.com/App-vNext/Polly
- - Docker: https://www.docker.com/
- - Docker Compose: https://docs.docker.com/compose/
+# learning-external-configuration
+## Purpose
+Implementation of external configuration providers:
+ - Spring Cloud Config: https://cloud.spring.io/spring-cloud-config/reference/html/
+ - Azure:
+	 - Azure App Configuration: https://github.com/Azure/AppConfiguration
+
+## Frameworks/Libraries
+ - Source Code:
+	 - .Net Core 3.1: https://docs.microsoft.com/es-es/dotnet/core/
+ - REST:
+	 - Refit: https://github.com/reactiveui/refit
+ - Resilience and transient-fault-handling:
+	 - Polly: https://github.com/App-vNext/Polly
+ - Container:
+	 - Docker: https://www.docker.com/
+	 - Docker Compose: https://docs.docker.com/compose/
 
 ### Docker
 
