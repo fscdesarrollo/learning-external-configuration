@@ -2,12 +2,13 @@
 Repositorio para mostrar ejemplos de configuración externa para soluciones basadas en .Net Core.
 
 ## Frameworks/Tecnologias
- - [x] .Net Core 3.1: https://github.com/reactiveui/refit
+ - [x] .Net Core 3.1: https://docs.microsoft.com/es-es/dotnet/core/
  - [x] Spring Cloud Config: https://cloud.spring.io/spring-cloud-config/reference/html/
  - [x] Azure App Configuration: https://github.com/Azure/AppConfiguration
  - [x] Refit: https://github.com/reactiveui/refit
  - [x] Polly: https://github.com/App-vNext/Polly
- - [x] Docker: https://github.com/App-vNext/Polly
+ - [x] Docker: https://www.docker.com/
+ - [x] Docker Compose: https://docs.docker.com/compose/
 
 ### Docker
 
