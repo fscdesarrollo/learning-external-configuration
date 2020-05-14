@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "helloworld",
       "environmentVariables": {
         "AZURE_CONNECTION_STRING": "Endpoint=https://learningconfiguration.azconfig.io;Id=+qGv-le-s0:HpBWRbYsPjfY16p1OBaL;Secret=Cfo6lEr4lWJETwxvOLrVpBi8HPmOlazBFulK7Pceu7c=",
         "ASPNETCORE_ENVIRONMENT": "ExternalConfig"
@@ -21,7 +21,7 @@
     "Learning.ExternalConfiguration.Api": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "helloworld",
       "environmentVariables": {
         "AZURE_CONNECTION_STRING": "Endpoint=https://learningconfiguration.azconfig.io;Id=+qGv-le-s0:HpBWRbYsPjfY16p1OBaL;Secret=Cfo6lEr4lWJETwxvOLrVpBi8HPmOlazBFulK7Pceu7c=",
         "ASPNETCORE_ENVIRONMENT": "LocalConfig"
@@ -31,13 +31,13 @@
     "Docker": {
       "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/weatherforecast",
-      "publishAllPorts": true,
-      "useSSL": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/helloworld",
       "environmentVariables": {
         "AZURE_CONNECTION_STRING": "Endpoint=https://learningconfiguration.azconfig.io;Id=+qGv-le-s0:HpBWRbYsPjfY16p1OBaL;Secret=Cfo6lEr4lWJETwxvOLrVpBi8HPmOlazBFulK7Pceu7c=",
         "ASPNETCORE_ENVIRONMENT": "ExternalConfig"
-      }
+      },
+      "publishAllPorts": true,
+      "useSSL": true
     }
   }
 }

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Learning.ExternalConfiguration.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     [Produces("application/json")]
     [Consumes("application/json")]
@@ -42,8 +42,8 @@ namespace Learning.ExternalConfiguration.Api.Controllers
         {
             try
             {
-                var publicKey = _configuration["API_MARVEL_PUBLIC_KEY"];//Get Key from Azure App Configuration
-                var hash = _configuration.GetSection("MarvelApiConfig:Hash").Value;
+                var publicKey = _configuration["API_MARVEL_PUBLIC_KEY"]; //Get Key from Azure App Configuration
+                var hash = _configuration.GetSection("MarvelApiConfig:Hash").Value; //Get value from Spring Cloud Config.
                 var marvelAuthenticationQueryParams = new MarvelApiAuthenticationQueryParams(_marvelConfig.Timestamp, publicKey, hash);
                 var marvelCharactersQueryParams = new MarvelApiCharactersQueryParams()
                 {

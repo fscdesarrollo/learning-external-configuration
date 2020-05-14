@@ -25,7 +25,7 @@ namespace Learning.ExternalConfiguration.Api
 
                         if (hostingEnviroment.EnvironmentName.Equals("ExternalConfig"))
                         {
-                            config.AddConfigServer(hostingEnviroment.EnvironmentName);
+                            config.AddConfigServer();
                         }
                     });
                     webBuilder.UseStartup<Startup>();
