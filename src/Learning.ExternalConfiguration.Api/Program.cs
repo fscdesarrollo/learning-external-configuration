@@ -20,8 +20,11 @@ namespace Learning.ExternalConfiguration.Api
                     webBuilder.ConfigureAppConfiguration((hostingContext, config) =>
                     {
                         var hostingEnviroment = hostingContext.HostingEnvironment;
-                        var azureConnectionString = Environment.GetEnvironmentVariable("AZURE_CONNECTION_STRING");
-                        config.AddAzureAppConfiguration(azureConnectionString); //Get connection strin to connect Azure App Configuration
+                        
+                        config.AddAzureAppConfiguration(options => {
+                            options.Connect(Environment.GetEnvironmentVariable("AZURE_CONNECTION_STRING"))
+                            .UseFeatureFlags();
+                        }); 
 
                         if (hostingEnviroment.EnvironmentName.Equals("ExternalConfig"))
                         {
