@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.FeatureManagement;
 
 namespace Learning.ExternalConfiguration.Api
 {
@@ -20,9 +21,12 @@ namespace Learning.ExternalConfiguration.Api
         {
             services.AddControllers();
             services.AddRouting(options => options.LowercaseUrls = true);
-
+            
             //Add External Services
             services.AddExternalServices(_configuration);
+
+            //Add Feature Flags
+            services.AddFeatureManagement();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
