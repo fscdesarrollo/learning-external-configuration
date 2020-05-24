@@ -5,6 +5,7 @@ Implementation of external configuration providers:
  - Spring Cloud Config: https://cloud.spring.io/spring-cloud-config/reference/html/
  - Azure:
 	 - Azure App Configuration: https://github.com/Azure/AppConfiguration
+	 - Azure Feature Flags: https://docs.microsoft.com/en-us/azure/azure-app-configuration/manage-feature-flags
 
 ## Frameworks/Libraries
  - Source Code:
